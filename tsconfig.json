@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "./build",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./src",
+    "paths": {
+      "@controller/*": ["app/Controller/*"],
+      "@domain/*": ["app/Domain/*"],
+      "@error/*": ["app/Error/*"],
+      "@events/*": ["app/Events/*"],
+      "@interfaces/*": ["app/Interfaces/*"],
+      "@middleware/*": ["app/Middleware/*"],
+      "@provider/*": ["app/Provider/*"],
+      "@singleton/*": ["app/Singleton/*"],
+
+      "@infra/*": ["infra/*"],
+      "@config/*": ["infra/Config/*"],
+      "@database/*": ["infra/Database/*"],
+      "@exception/*": ["infra/Exceptions/*"],
+      "@routes/*": ["infra/Routes/*"]
+    }
+  }
+}
